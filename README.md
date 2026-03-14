@@ -25,6 +25,7 @@ Assignment นี้เป็นการทดสอบตั้งค่า NG
 
 #### 2. Jenkins
 เข้าถึงได้ที่ URL: `http://jenkins.local`
+![jenkins.local](capture/jenkins.local.png)
 
 ---
 
