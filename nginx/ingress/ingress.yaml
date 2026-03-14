@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: nginx-ingress
+  annotations:
+    kubernetes.io/ingress.class: "nginx" # ระบุว่าใช้ Ingress Controller ตัวไหน
+    #spec.ingressClassName: "nginx"
+spec:
+  rules:
+  - host: my-nginx.local  # Domain ที่เราต้องการใช้งาน
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: nginx-service # ชื่อ Service ที่เราสร้างไว้ข้างบน
+            port:
+              number: 80

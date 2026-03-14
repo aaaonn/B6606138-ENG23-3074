@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-service
+spec:
+  selector:
+    app: my-nginx # ต้องตรงกับ label ใน Deployment
+  ports:
+    - protocol: TCP
+      port: 80         # Port ของ Service
+      targetPort: 80   # Port ของ Pod ที่ต้องการส่งไปหา
+  type: ClusterIP      # ใช้เรียกกันเองภายใน Cluster
