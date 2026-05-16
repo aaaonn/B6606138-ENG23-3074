@@ -1,4 +1,4 @@
-## **B6606138 นายธนพล-สงกล้า**
+## **B6606138 นายธนพล สงกล้า**
 
 Assignment นี้เป็นการทดสอบตั้งค่า NGINX Ingress Controller บน Kubernetes เพื่อควบคุมช่องทางการเข้าถึง Service ต่างๆ ผ่านชื่อโดเมนท้องถิ่น (Local Domain) ภายในเครื่อง ประกอบไปด้วยบริการ:
 - **NGINX Web Server** (`my-nginx.local`)
@@ -32,3 +32,6 @@ Assignment นี้เป็นการทดสอบตั้งค่า NG
 #### 3. Grafana
 เข้าถึงได้ที่ URL: `http://grafana.local`
 ![grafana.local](capture/grafana.local.png)
+
+
+
